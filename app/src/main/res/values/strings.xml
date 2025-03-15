@@ -11,5 +11,4 @@
     <string name="toast_bt_limpar">Botão de limpar</string>
     <string name="error_peso">Campo peso deve ser informado</string>
     <string name="error_altura">Campo altura deve ser informado</string>
-    <string name="df">%.2f</string>
 </resources>
