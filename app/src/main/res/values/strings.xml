@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">CalculaImc-Kotlin</string>
+    <string name="peso">Peso:</string>
+    <string name="hint_peso">Peso em Kg</string>
+    <string name="altura">Altura:</string>
+    <string name="hint_altura">Altura em m</string>
+    <string name="imc">Imc:</string>
+    <string name="zeros">0,0</string>
+    <string name="calcular">Calcular</string>
+    <string name="limpar">Limpar</string>
+    <string name="toast_bt_limpar">Botão de limpar</string>
+    <string name="error_peso">Campo peso deve ser informado</string>
+    <string name="error_altura">Campo altura deve ser informado</string>
+    <string name="df">%.2f</string>
 </resources>

@@ -1,6 +1,5 @@
 package br.edu.utfpr.calculaimc_kotlin
 
-import android.icu.text.DecimalFormat
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -35,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         btLimpar.setOnLongClickListener {
-            Toast.makeText(this, "Botão de limpar", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getString(R.string.toast_bt_limpar), Toast.LENGTH_SHORT).show()
             false
         }
     }
@@ -49,12 +48,12 @@ class MainActivity : AppCompatActivity() {
 
     private fun btnCalcularOnClick() {
         if(etPeso.text.toString().isEmpty()){
-            etPeso.error = "Campo peso deve ser informado"
+            etPeso.error = getString(R.string.error_peso)
             return
         }
 
         if(etAltura.text.toString().isEmpty()){
-            etAltura.error = "Campo altura deve ser informado"
+            etAltura.error = getString(R.string.error_altura)
             return
         }
         val peso = etPeso.text.toString().toDouble()
@@ -67,7 +66,7 @@ class MainActivity : AppCompatActivity() {
         // tvResultado.text = df.format(imc)
 
         // kotlin way
-        tvResultado.text = "%.2f".format(imc)
+        tvResultado.text = getString(R.string.df).format(imc)
     }
 
 }
